@@ -232,6 +232,7 @@ class Game (Scene):
 class MultiScene (Scene):
 	def __init__(self, new_scene):
 		self.active_scene = new_scene()
+		self.fixed_time_step = 10
 
 	def switch_scene(self, new_scene):
 		self.active_scene = new_scene()
